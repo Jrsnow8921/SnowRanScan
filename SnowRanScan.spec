@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['SnowRanScan.py'],
+a = Analysis(['SnowRanScan\\SnowRanScan.py'],
              pathex=['C:\\Users\\jsnow\\Desktop'],
              binaries=None,
              datas=None,
