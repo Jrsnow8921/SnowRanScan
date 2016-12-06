@@ -1,0 +1,3 @@
+([('SnowRanScan',
+   '/Users/programmer/Desktop/SnowRanScan/dist/SnowRanScan',
+   'EXECUTABLE')],)
