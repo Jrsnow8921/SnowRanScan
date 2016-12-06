@@ -14,7 +14,7 @@
 <key>CFBundleDisplayName</key>
 <string>SnowRanScan</string>
 <key>CFBundleIconFile</key>
-<string>icon-windowed.icns</string>
+<string>iconfavicon2.ico</string>
 <key>CFBundlePackageType</key>
 <string>APPL</string>
 <key>LSBackgroundOnly</key>
