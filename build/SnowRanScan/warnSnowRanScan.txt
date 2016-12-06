@@ -96,8 +96,12 @@ missing module named _weakref.ReferenceType - imported by _weakref, weakref
 missing module named _weakref.proxy - imported by _weakref, weakref
 missing module named _weakref.getweakrefs - imported by _weakref, weakref
 missing module named _weakref.getweakrefcount - imported by _weakref, weakref
-missing module named _weakref.CallableProxyType - imported by _weakref, weakref
 missing module named _weakref.ProxyType - imported by _weakref, weakref
+missing module named _weakref.CallableProxyType - imported by _weakref, weakref
+missing module named nt._isdir - imported by nt, ntpath
+missing module named nt._getfullpathname - imported by nt, ntpath
+missing module named nt._exit - imported by nt, os
+missing module named readline - imported by cmd, pdb
 missing module named time.strptime - imported by time, ssl
 missing module named time.time - imported by time, threading
 missing module named time.sleep - imported by time, threading
@@ -108,16 +112,12 @@ missing module named exceptions.ReferenceError - imported by exceptions, weakref
 missing module named copy.deepcopy - imported by copy, weakref
 missing module named _functools.partial - imported by _functools, functools
 missing module named _functools.reduce - imported by _functools, functools
+missing module named pwd - imported by posixpath, getpass
 missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle
 missing module named 'org.python' - imported by pickle, xml.sax
 missing module named 'org.python'.imp - imported by 'org.python', xml.sax
-missing module named _subprocess - imported by subprocess
-missing module named msvcrt - imported by subprocess, getpass
+missing module named fcntl - imported by tempfile, subprocess
 missing module named _hashlib.pbkdf2_hmac - imported by _hashlib, hashlib
-missing module named _sha512 - imported by hashlib
-missing module named _sha256 - imported by hashlib
-missing module named _md5 - imported by hashlib
-missing module named _sha - imported by hashlib
 missing module named os.urandom - imported by os, random
 missing module named math.sin - imported by math, random
 missing module named math.sqrt - imported by math, random
@@ -193,12 +193,10 @@ missing module named _io.TextIOWrapper - imported by _io, io
 missing module named _io.UnsupportedOperation - imported by _io, io
 missing module named _scproxy._get_proxy_settings - imported by _scproxy, urllib
 missing module named _scproxy._get_proxies - imported by _scproxy, urllib
-missing module named aetypes.mkenum - imported by aetypes, aepack
-missing module named aetypes.ObjectSpecifier - imported by aetypes, aepack
-missing module named Carbon.Dlg.GetDialogItemText - imported by Carbon.Dlg, EasyDialogs
-missing module named Carbon.Dlg.ModalDialog - imported by Carbon.Dlg, EasyDialogs
-missing module named Carbon.Dlg.GetNewDialog - imported by Carbon.Dlg, EasyDialogs
-missing module named Carbon.Dlg.SetDialogItemText - imported by Carbon.Dlg, EasyDialogs
+missing module named _scproxy - imported by urllib
+missing module named EasyDialogs.AskPassword - imported by EasyDialogs, getpass
+missing module named EasyDialogs - imported by getpass
+missing module named termios - imported by getpass
 missing module named SOCKS - imported by ftplib
 missing module named sys.py3kwarning - imported by sys, httplib
 missing module named array.array - imported by array, httplib
@@ -206,22 +204,30 @@ missing module named rourl2path.url2pathname - imported by rourl2path, urllib
 missing module named rourl2path.pathname2url - imported by rourl2path, urllib
 missing module named rourl2path - imported by urllib
 missing module named _xmlplus - imported by xml
-missing module named OverrideFrom23 - imported by Carbon.Res
-missing module named Carbon.File.FSGetResourceForkName - imported by Carbon.File, plistlib
-missing module named Carbon.File.FSRef - imported by Carbon.File, plistlib
+missing module named 'Carbon.Files'.fsRdWrPerm - imported by 'Carbon.Files', plistlib
+missing module named 'Carbon.File'.FSGetResourceForkName - imported by 'Carbon.File', plistlib
+missing module named 'Carbon.File'.FSRef - imported by 'Carbon.File', plistlib
+missing module named 'Carbon.File' - imported by plistlib
+missing module named Carbon.Res - imported by Carbon, plistlib
+missing module named 'Carbon.Files'.fsRdPerm - imported by 'Carbon.Files', plistlib
+missing module named 'Carbon.Files' - imported by plistlib
+missing module named Carbon.FSGetResourceForkName - imported by Carbon, plistlib
+missing module named Carbon.FSRef - imported by Carbon, plistlib
+missing module named Carbon - imported by plistlib
+missing module named MacOS - imported by platform
+missing module named macresource - imported by MacOS
 missing module named gestalt.gestalt - imported by gestalt, platform
+missing module named gestalt - imported by platform
 missing module named _winreg.OpenKeyEx - imported by _winreg, platform
 missing module named _winreg.HKEY_LOCAL_MACHINE - imported by _winreg, platform
 missing module named _winreg.QueryValueEx - imported by _winreg, platform
 missing module named _winreg.CloseKey - imported by _winreg, platform
-missing module named _winreg - imported by platform, mimetypes, urllib
 missing module named winreg.OpenKeyEx - imported by winreg, platform
 missing module named winreg.HKEY_LOCAL_MACHINE - imported by winreg, platform
 missing module named winreg.QueryValueEx - imported by winreg, platform
 missing module named winreg.CloseKey - imported by winreg, platform
 missing module named winreg - imported by platform
 missing module named sys.getwindowsversion - imported by sys, platform
-missing module named win32pipe - imported by platform
 missing module named _sre.MAXREPEAT - imported by _sre, sre_constants
 missing module named re._compile - imported by re, sre
 missing module named re.__all__ - imported by re, sre
@@ -236,8 +242,6 @@ missing module named _emx_link.link - imported by _emx_link, os
 missing module named _emx_link - imported by os
 missing module named os2._exit - imported by os2, os
 missing module named os2 - imported by os
-missing module named nt._isdir - imported by nt, ntpath
-missing module named nt._getfullpathname - imported by nt, ntpath
-missing module named nt._exit - imported by nt, os
-missing module named nt - imported by os, ntpath
 missing module named posix._exit - imported by posix, os
+missing module named posix - imported by os
+missing module named resource - imported by posix
