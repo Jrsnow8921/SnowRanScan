@@ -88,7 +88,7 @@ root = Tk()
 
 save_2_file = IntVar()
 #root.iconbitmap(r'icon\favicon2.ico')
-root.title("SnowRanScan 1.1")
+root.title("SnowRanScan 1.2")
 root.geometry("500x125")
 e1 = Entry(root)
 e1.pack()
