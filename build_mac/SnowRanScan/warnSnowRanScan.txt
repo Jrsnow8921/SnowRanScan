@@ -18,6 +18,11 @@ missing module named strop.uppercase - imported by strop, string
 missing module named struct.calcsize - imported by struct, ctypes
 missing module named _struct.__doc__ - imported by _struct, struct
 missing module named _struct._clearcache - imported by _struct, struct
+missing module named _functools.partial - imported by _functools, functools
+missing module named _functools.reduce - imported by _functools, functools
+missing module named operator.attrgetter - imported by operator, inspect
+missing module named operator.itemgetter - imported by operator, collections, heapq
+missing module named operator.eq - imported by operator, collections
 missing module named _warnings.warn_explicit - imported by _warnings, warnings
 missing module named _warnings.filters - imported by _warnings, warnings
 missing module named _warnings.once_registry - imported by _warnings, warnings
@@ -86,9 +91,6 @@ missing module named itertools.count - imported by itertools, heapq, threading
 missing module named itertools.islice - imported by itertools, repr, heapq
 missing module named collections.deque - imported by collections, shlex, threading
 missing module named collections.OrderedDict - imported by collections, unittest.util
-missing module named operator.itemgetter - imported by operator, collections, heapq
-missing module named operator.eq - imported by operator, collections
-missing module named operator.attrgetter - imported by operator, inspect
 missing module named _collections.deque - imported by _collections, collections
 missing module named _collections.defaultdict - imported by _collections, collections
 missing module named _weakref.ref - imported by _weakref, _weakrefset, weakref
@@ -106,8 +108,6 @@ missing module named org.PyStringMap - imported by org, copy
 missing module named org - imported by copy
 missing module named exceptions.ReferenceError - imported by exceptions, weakref
 missing module named copy.deepcopy - imported by copy, weakref
-missing module named _functools.partial - imported by _functools, functools
-missing module named _functools.reduce - imported by _functools, functools
 missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle
 missing module named 'org.python' - imported by pickle, xml.sax
 missing module named 'org.python'.imp - imported by 'org.python', xml.sax

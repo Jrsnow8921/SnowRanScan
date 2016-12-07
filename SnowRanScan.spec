@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['SnowRanScan.py'],
-             pathex=['/Users/programmer/Desktop/SnowRanScan'],
+             pathex=['/Users/programmer/Desktop/CodeLib/SnowRanScan'],
              binaries=None,
              datas=None,
              hiddenimports=[],
@@ -25,8 +25,8 @@ exe = EXE(pyz,
           debug=False,
           strip=False,
           upx=True,
-          console=False , icon='iconfavicon2.ico')
+          console=False , icon='icon/favicon2.ico')
 app = BUNDLE(exe,
              name='SnowRanScan.app',
-             icon='iconfavicon2.ico',
+             icon='icon/favicon2.ico',
              bundle_identifier=None)

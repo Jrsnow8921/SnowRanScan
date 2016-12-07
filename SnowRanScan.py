@@ -3,6 +3,8 @@ import re
 import sys
 import platform
 from Tkinter import *
+import Tkinter, Tkconstants, tkFileDialog
+
 import tkMessageBox
 
 class SnowRanScan(object):
@@ -75,7 +77,12 @@ def infected_y(infe):
 def infected_n(infe):
    tkMessageBox.showinfo("Infected files", infe)
 
-   
+def get_file_path():
+  file = tkFileDialog.askdirectory()
+  if file: 
+    e1.delete(0,END)
+    e1.insert(0,str(file))
+  return
 
 root = Tk()
 
@@ -85,6 +92,9 @@ root.title("SnowRanScan 1.1")
 root.geometry("500x125")
 e1 = Entry(root)
 e1.pack()
+b_file = Button(root, text="Browse", command= get_file_path)
+b_file.pack()
+
 check = Checkbutton(root, text="Save", variable=save_2_file)
 check.pack()
 btnEnts = Button(root, text="Search", command= run_it)
