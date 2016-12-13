@@ -100,14 +100,10 @@ missing module named _weakref.getweakrefs - imported by _weakref, weakref
 missing module named _weakref.getweakrefcount - imported by _weakref, weakref
 missing module named _weakref.CallableProxyType - imported by _weakref, weakref
 missing module named _weakref.ProxyType - imported by _weakref, weakref
-missing module named time.strptime - imported by time, ssl
-missing module named time.time - imported by time, threading
-missing module named time.sleep - imported by time, threading
-missing module named datetime.date - imported by datetime, _strptime
+missing module named copy.deepcopy - imported by copy, weakref
 missing module named org.PyStringMap - imported by org, copy
 missing module named org - imported by copy
 missing module named exceptions.ReferenceError - imported by exceptions, weakref
-missing module named copy.deepcopy - imported by copy, weakref
 missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle
 missing module named 'org.python' - imported by pickle, xml.sax
 missing module named 'org.python'.imp - imported by 'org.python', xml.sax
@@ -130,6 +126,8 @@ missing module named math.e - imported by math, random
 missing module named math.pi - imported by math, random
 missing module named threading.RLock - imported by threading, _threading_local
 missing module named threading.current_thread - imported by threading, _threading_local
+missing module named time.time - imported by time, threading
+missing module named time.sleep - imported by time, threading
 missing module named _ssl.RAND_egd - imported by _ssl, ssl, socket
 missing module named _ssl.SSL_ERROR_EOF - imported by _ssl, socket
 missing module named _ssl.SSL_ERROR_WANT_READ - imported by _ssl, socket
@@ -143,6 +141,8 @@ missing module named _ssl.SSL_ERROR_WANT_WRITE - imported by _ssl, socket
 missing module named _ssl.RAND_add - imported by _ssl, ssl, socket
 missing module named _ssl.SSL_ERROR_SYSCALL - imported by _ssl, socket
 missing module named _ssl.SSLError - imported by _ssl, ssl, socket
+missing module named datetime.date - imported by datetime, _strptime
+missing module named time.strptime - imported by time, ssl
 missing module named _ssl.enum_crls - imported by _ssl, ssl
 missing module named _ssl.enum_certificates - imported by _ssl, ssl
 missing module named _ssl._OPENSSL_API_VERSION - imported by _ssl, ssl

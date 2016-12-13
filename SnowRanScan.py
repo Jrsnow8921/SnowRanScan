@@ -29,13 +29,13 @@ class SnowRanScan(object):
        num_folders += 1
        for filename in filter(lambda name:known_ext.match(name),filenames):          
            inf_list.append(os.path.join(root, filename))
-      self.update_progress_bar(num_folders)  
     else:
       lin_dir = folder
-     
       for root, dirnames, filenames in os.walk(lin_dir):
+       num_folders += 1
        for filename in filter(lambda name:known_ext.match(name),filenames):
            inf_list.append(os.path.join(root, filename))
+    self.update_progress_bar(num_folders) 
     if save_it == 1:
       SnowRanScan().save_results_to_file(inf_list)  
     
@@ -55,13 +55,13 @@ class SnowRanScan(object):
 
   def update_progress_bar(self, number_of_files):
    k = 0
-   print number_of_files
+   if number_of_files < MAX:
+     number_of_files = 101 
    while k <= number_of_files:
      progress_var.set(k)
      k += 1
      time.sleep(0.001)
      root.update_idletasks()
-  
 
 
 okToPressEnter = True
