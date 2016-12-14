@@ -4,39 +4,39 @@
 
 # Main 
   This is where you will browse for a directoy, search, and save all from this screen.
-  '''
+  ```
     ![alt tag](https://github.com/Jrsnow8921/SnowRanScan/raw/master/main.png)
-  '''
+  ```
 
 # Alert 
   You can choose not to save the results to a file by leaving the save checkbox unchecked.
-  '''
+  ```
     ![alt tag](https://github.com/Jrsnow8921/SnowRanScan/raw/master/found.png)
-  '''
+  ```
 
 # Saved
 
   You can choose to save the results to a file by checking the save checkbox (This will save the file in the directory that the application is running in).
-  '''
+  ```
     ![alt tag](https://github.com/Jrsnow8921/SnowRanScan/raw/master/saved.png)
-  '''
+  ```
 
 # Windows Users 
   (I have compiled the python file into a handy exe)
-  '''
+  ```
     The SnowRanScan.exe will be under dist_win/ 
-  '''
+  ```
 
 # Mac Users 
   (I have compiled the python file into a mac application)
-  '''
+  ```
     The SnowRanScan.app will be under dist_mac/
-  '''
+  ```
 
 # Linux Users
-  '''
+  ```
     Please run as a normal python script (example: python SnowRanScan.py)
-  '''
+  ```
 
 Contributing to SnowRanScan
 =========================================
