@@ -7,3 +7,8 @@
 /Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/bye.txt
 /Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/asfdsf/hello.txt
 /Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/asfdsf/adfdsf/sdfsaaaaaaa.txt
+/Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/aaaaa.vvv
+/Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/bye.txt
+/Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/hahah.locked
+/Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/asfdsf/hello.txt
+/Users/programmer/Desktop/CodeLib/SnowRanScan/test_case_folder/asfdsf/adfdsf/sdfsaaaaaaa.txt
