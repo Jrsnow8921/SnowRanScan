@@ -2,7 +2,7 @@
   A lightweight ransomware file scanner- Checks for infected files 
 
 ## Main 
-  This is where you will browse for a directoy, search, and save all from this screen.
+  This is where you will browse for a directory, search, and save all from this screen.
   
   ![alt tag](https://github.com/Jrsnow8921/SnowRanScan/raw/master/main.png)
 
