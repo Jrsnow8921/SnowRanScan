@@ -6,6 +6,7 @@ import time
 import glob
 import platform
 from Tkinter import *
+from RanExtDB import * 
 import Tkinter, Tkconstants, tkFileDialog
 
 import tkMessageBox
@@ -20,26 +21,29 @@ class SnowRanScan(object):
     return "Found %s total infected files\nHere are the files\n  %s\n" %(amount_c, ' '.join(map(str, check)))
 
   def find_bad_files(self, folder, save_it):
-    known_ext = re.compile('.*\.(ecc|ezz|exx|zzz|locky|micro|zepto|cerber3|axx|ecc|ezz|exx|crypz|cerber2|odin|cryptowall|enciphered|cryptolocker|cryp1|breaking_bad|LeChiffre|aesir|enigma|rrk|zzzzz|zzzz|coverton|good|wflx|crjoker|enc|crinf|windows10|zyklon|pdcr|abc|EnCiPhErEd|xyz|kkk|fantom|PoAr2w|pzdc|odcodc|legion|darkness|payms|crptrgr|czvxce|btc|kraken|bitstalk|rdm|magic|SecureCrypted|73i87A|vvv|CCCRRRPPP|kernel_time|kernel_complete|cry|rokku|payrms|globe|venusf|purge|kernel_pid|pays|kratos|paymts|fun|padcrypt|locklock|p5tkjw|1txt|szf|unabailable|shit|realfsOciety@sigaint.org.fsOciety|dharma|paymst|herbst|rekt|kimcilware|raid10|R16m01d05|kimcilware|raid10|nuclear56|lock93|dCrypt|coded|xyz|aaa|abc|ccc|vvv|xxx|ttt|micro|encrypted|locked|crypto|_crypt|lol|crinf|r5a|XRNT|XTBL|crypt|R16M01D05|pzdc|good|LOL!|OMG!|RDM|RRK|encryptedRSA|crjoker|EnCiPhErEd|LeChiffre|keybtc@inbox_com|0x0|bleep|1999|vault|HA3|toxcrypt|magic|SUPERCRYPT|CTBL|CTB2|locky|)$')
+    known_ext = FetchRanExt().grab_data()
     inf_list = []
     num_folders = 0
     if platform.system() == 'Windows':
       win_dir = SnowRanScan().convert_folder_windows(folder)
       for root, dirnames, filenames in os.walk(win_dir):
        num_folders += 1
-       for filename in filter(lambda name:known_ext.match(name),filenames):          
+       for filename in filter(lambda name:known_ext.search(name),filenames):          
            inf_list.append(os.path.join(root, filename))
     else:
       lin_dir = folder
       for root, dirnames, filenames in os.walk(lin_dir):
        num_folders += 1
-       for filename in filter(lambda name:known_ext.match(name),filenames):
+       for filename in filter(lambda name:known_ext.search(name),filenames):
            inf_list.append(os.path.join(root, filename))
     self.update_progress_bar(num_folders) 
     if save_it == 1:
       SnowRanScan().save_results_to_file(inf_list)  
     
-    return inf_list    
+    filt_list = filter(lambda exc_f_type: not exc_f_type.endswith('txt'), inf_list)
+
+  
+    return filt_list    
     
   def save_results_to_file(self, *args):
     file_to_save = open("SnowRanScanResults.txt", 'a')
@@ -113,7 +117,7 @@ save_2_file = IntVar()
 progress_var = DoubleVar()
 
 #root.iconbitmap(r'icon\favicon2.ico')
-root.title("SnowRanScan 1.2")
+root.title("SnowRanScan 1.3")
 root.geometry("500x125")
 e1 = Entry(root)
 e1.pack()
