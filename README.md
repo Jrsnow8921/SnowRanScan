@@ -18,11 +18,11 @@
   ![alt tag](https://github.com/Jrsnow8921/SnowRanScan/raw/master/saved.png)
 
 ## Windows Users 
-  (I have compiled the python file into a handy exe)
+    (I have compiled the python file into a handy exe)
     The SnowRanScan.exe will be under dist_win/ 
 
 ## Mac Users 
-  (I have compiled the python file into a mac application)
+    (I have compiled the python file into a mac application)
     The SnowRanScan.app will be under dist_mac/
 
 ## Linux Users
