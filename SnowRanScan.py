@@ -40,7 +40,7 @@ class SnowRanScan(object):
     if save_it == 1:
       SnowRanScan().save_results_to_file(inf_list)  
     
-    filt_list = filter(lambda exc_f_type: not exc_f_type.endswith('txt'), inf_list)
+    filt_list = filter(lambda exc_f_type: not exc_f_type.endswith(FetchRanExt().ok_ext()), inf_list)
 
   
     return filt_list    
