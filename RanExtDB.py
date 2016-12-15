@@ -9,6 +9,7 @@ class FetchRanExt(object):
   def grab_data(self):
 
     set_db_in_desktop = os.path.expanduser("~/Desktop/RanExt.db")
+    #set_db_in_desktop = os.path.expanduser("X:\\Install\\SnowRanScan\\RanExt.db")
 
     ext = []
 
