@@ -1,3 +1,0 @@
-([('SnowRanScan',
-   '/Users/programmer/Desktop/CodeLib/SnowRanScan/dist/SnowRanScan',
-   'EXECUTABLE')],)

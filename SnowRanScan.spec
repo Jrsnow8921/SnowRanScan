@@ -4,15 +4,15 @@ block_cipher = None
 
 
 a = Analysis(['SnowRanScan.py'],
-             pathex=['/Users/programmer/Desktop/CodeLib/SnowRanScan'],
+             pathex=['C:\\Users\\jsnow\\Desktop\\SnowRanScan'],
              binaries=None,
              datas=None,
              hiddenimports=[],
-             hookspath=[],
-             runtime_hooks=[],
-             excludes=[],
-             win_no_prefer_redirects=False,
-             win_private_assemblies=False,
+             hookspath=None,
+             runtime_hooks=None,
+             excludes=None,
+             win_no_prefer_redirects=None,
+             win_private_assemblies=None,
              cipher=block_cipher)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
@@ -23,10 +23,6 @@ exe = EXE(pyz,
           a.datas,
           name='SnowRanScan',
           debug=False,
-          strip=False,
+          strip=None,
           upx=True,
-          console=False , icon='icon/favicon2.ico')
-app = BUNDLE(exe,
-             name='SnowRanScan.app',
-             icon='icon/favicon2.ico',
-             bundle_identifier=None)
+          console=False , icon='icon\\favicon2.ico')
